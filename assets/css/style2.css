@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
+body {
+font-family: oswald;
+font-size:14px;
 
+}
 /* 
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
 
 
-nav {font-family: sans-serif; font-size: 10px;}
-#main {width: 900px; margin: 10px auto;}
-
+nav {font-family: sans-serif; font-size: 10px;}nav
+#main {width: 900px; margin: 10px auto;}main
+h1 {
+    font-family: "Bungee Inline",cursive;
+    font-size:46px ;
+    font-weight: lighter;
+}
 /* 
     Add a CSS ruleset targeting the restaurant name to accomplish the following:
         - Use the 'Bungee Inline' font 
@@ -17,24 +25,36 @@ nav {font-family: sans-serif; font-size: 10px;}
 */
 
 
-#menu {columns: 420px 2; column-gap: 60px;}
+#menu {columns: 420px 2; column-gap: 60px;
+}
 section {margin-bottom: 20px; padding: 10px;}
 
-h2 {margin-top: 0;}
+h2 {margin-top: 0;
+text-transform: uppercase;
+}
+
+
+    
+
 
 /* 
     Add a CSS ruleset targeting targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu in uppercase
 */
 
-
+dt {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline;
+}
 /* 
      Update the following ruleset (dt) to accomplish the following:
         - Make the name of each menu item appear in bold 
         - set the font size to 16px
 */
-dt {
-    display: inline;
+dt::after {
+content: ",";
+
 }
 
 /* 
@@ -49,13 +69,25 @@ dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
 
 .price {float: right; padding: 0 0 35px 20px;}
 
+
+address{
+    text-align: right;
+}
 /* 
     Add a CSS ruleset targeting the footer to accomplish the following:
     - right align the text in the footer
 */
 
 
+#starters {
+    border:2px solid black ;
+    
+}
 
+#desserts {
+
+    border:2px solid black ;
+}
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
